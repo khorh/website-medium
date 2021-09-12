@@ -1,0 +1,13 @@
+@use "../../../assets/styles/variables" as *;
+
+.h2 {
+  color: $primary-color-main;
+}
+
+.h2 {
+  border-bottom: 1px solid $primary-color-shade-one;
+  padding-bottom: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 18px;
+}

@@ -1,0 +1,26 @@
+@use "../../../assets/styles/variables" as *;
+
+.hyperlink {
+  &-topic {
+    margin: 7px 0 0 10px;
+    font-size: 20px;
+    font-weight: 400;
+    color: $primary-color-main;
+    text-decoration: none;
+  }
+
+  &-sign-in {
+    margin-left: 16px;
+    font-family: $secondary-font-family;
+    font-size: 16px;
+    font-weight: 400;
+    color: $secondary-color-main;
+    text-decoration: none;
+  }
+
+  &-join {
+    font-size: 14px;
+    color: $primary-color-light;
+    text-decoration: none;
+  }
+}
