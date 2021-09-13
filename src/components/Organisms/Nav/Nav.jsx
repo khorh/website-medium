@@ -1,9 +1,9 @@
 import React from "react";
 import "./_nav.scss";
-import Logo from "../../Atoms/Logo/Logo";
-import { HyperlinkTopic, HyperlinkJoin, HyperlinkSignIn } from "../../Atoms/Hyperlink/Hyperlinks";
-import PrimaryButton from "../../Atoms/Button/PrimaryButton/PrimaryButton";
-import {VerticalDivider} from "../../Atoms/Divider/Dividers";
+import Logo from "../../Atoms/logo/Logo";
+import { HyperlinkTopic, HyperlinkJoin, HyperlinkSignIn } from "../../Atoms/hyperlinks/Hyperlinks";
+import PrimaryButton from "../../Atoms/buttons/PrimaryButton/PrimaryButton";
+import {VerticalDivider} from "../../Atoms/dividers/Dividers";
 
 const Nav = () => {
     return (
