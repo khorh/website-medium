@@ -1,3 +1,14 @@
 .main {
-    width: 784px;
+    display: flex;
+}
+
+.section-left {
+    width: calc((100% / 3) * 2);
+    padding: 0 16px;
+}
+
+.section-right {
+    width: calc(100% / 3);
+    margin: 0 16px;
+    padding-left: 56px;
 }

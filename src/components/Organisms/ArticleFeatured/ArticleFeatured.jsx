@@ -1,6 +1,6 @@
-import "./_featuredArticle.scss";
+import "./_articleFeatured.scss";
 
-const FeaturedArticle = (props) => {
+const ArticleFeatured = (props) => {
     const { featuredArr } = props;
 
     const featuredContent = featuredArr.map(article => (
@@ -20,4 +20,4 @@ const FeaturedArticle = (props) => {
     );
 };
 
-export default FeaturedArticle;
+export default ArticleFeatured;

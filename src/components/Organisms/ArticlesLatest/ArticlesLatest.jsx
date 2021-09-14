@@ -1,8 +1,8 @@
 import React from "react";
-import "./_latestArticles.scss";
-import { TypoH2 } from "../../Atoms/typo/Typo";
+import "./_articlesLatest.scss";
+import { H2TopicNav } from "../../Atoms/typo/Typo";
 
-const LatestArticles = (props) => {
+const ArticlesLatest = (props) => {
     const { latestArr } = props;
 
     const latestContent = latestArr.map(article => {
@@ -23,10 +23,10 @@ const LatestArticles = (props) => {
 
     return (
         <section>
-            <TypoH2 heading="LATEST" />
+            <H2TopicNav heading="LATEST" />
             {latestContent}
         </section>
     );
 };
 
-export default LatestArticles;
+export default ArticlesLatest;

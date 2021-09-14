@@ -1,0 +1,26 @@
+@use "../../../assets/styles/variables" as *;
+
+.button {
+    &__primary {
+        margin-left: 16px;
+        border-radius: 99em;
+        border: 1px solid $secondary-color-main;
+        padding: 7px 16px 9px;
+        background-color: $color-white;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        color: $secondary-color-main;
+    }
+
+    &__secondary {
+        border-radius: 99em;
+        border: 1px solid $primary-color-light;
+        padding: 4px 12px 6px;
+        background-color: $color-white;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        color: $primary-color-main;
+    }
+}

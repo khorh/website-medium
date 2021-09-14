@@ -1,13 +1,33 @@
 @use "../../../assets/styles/variables" as *;
 
-.h2 {
-  color: $primary-color-main;
+.h2__topic--nav, .h2__topic--side-bar {
+  margin: 0;
 }
 
 .h2 {
-  border-bottom: 1px solid $primary-color-shade-one;
-  padding-bottom: 8px;
-  font-size: 13px;
-  font-weight: 700;
-  line-height: 18px;
+  &__topic--nav {
+    border-bottom: 1px solid $primary-color-shade-one;
+    padding-bottom: 8px;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 18px;
+    color: $primary-color-main;
+  }
+
+  &__topic--side-bar {
+    font-family: $tertiary-font-family;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    color: $primary-color-shade-three;
+  }
+}
+
+.p {
+  &__topic--sidebar {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: $primary-color-light;
+  }
 }
