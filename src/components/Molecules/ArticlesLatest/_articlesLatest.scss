@@ -2,40 +2,20 @@
 
 .latest-article {
     display: flex;
+    justify-content: space-between;
     padding: 12px 0;
 
     &__left {
         padding-right: 24px;
+        &--info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
     }
 
     &__right {
         width: 152px;
         height: 137px;
-    }
-
-    &__image {
-        width: 152px;
-        height: 137px;
-    }
-
-    & h4 {
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 20px;
-        color: $primary-color-light;
-    }
-
-    & a {
-        font-size: 13px;
-        font-weight: 400;
-        line-height: 20px;
-        color: $primary-color-main;
-    }
-
-    & p {
-        font-size: 13px;
-        font-weight: 400;
-        line-height: 20px;
-        color: $primary-color-light;
     }
 }

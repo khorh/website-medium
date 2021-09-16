@@ -10,6 +10,16 @@ const ImageArticleAvatar = (props) => {
     );
 };
 
+const ImageArticleLatest = (props) => {
+    const {src, alt} = props;
+
+    return (
+        <>
+            <img className="image__article__latest" src={src} alt={alt} />
+        </>
+    );
+};
+
 const ImageArticlePopular = (props) => {
     const {src, alt} = props;
 
@@ -20,4 +30,4 @@ const ImageArticlePopular = (props) => {
     );
 };
 
-export {ImageArticleAvatar, ImageArticlePopular};
+export {ImageArticleAvatar, ImageArticleLatest, ImageArticlePopular};
