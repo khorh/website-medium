@@ -1,0 +1,29 @@
+@use "../../../assets/styles/variables" as *;
+
+.featured-article {
+    margin-bottom: 40px;
+
+    &__image {
+        width: 100%;
+        max-height: 382px;
+    }
+
+    &__headings {
+        & > .h1__article {
+            margin-top: 13px;
+        }
+
+        & > .h3__article--primary {
+            margin-top: 10px;
+        }
+    }
+
+    &__details {
+        display: flex;
+        margin-top: 16px;
+    }
+
+    &__details--info {
+        margin-left: 16px;
+    }
+}

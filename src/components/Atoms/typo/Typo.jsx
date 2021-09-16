@@ -1,16 +1,25 @@
-import React from "react";
 import "./_typo.scss";
 
-const H2TopicNav = (props) => {
-    const { heading } = props;
+const H1Article = (props) => {
+    const {heading} = props;
 
     return (
-        <h2 className="h2__topic--nav">{heading}</h2>
+        <>
+            <h1 className="h1__article">{heading}</h1>
+        </>
+    );
+};
+
+const H2Topic = (props) => {
+    const {heading} = props;
+
+    return (
+        <h2 className="h2__topic">{heading}</h2>
     );
 };
 
 const H2TopicSideBar = (props) => {
-    const { heading } = props;
+    const {heading} = props;
 
     return (
         <>
@@ -19,8 +28,38 @@ const H2TopicSideBar = (props) => {
     );
 };
 
+const H3ArticlePrimary = (props) => {
+    const {heading} = props;
+
+    return (
+        <>
+            <h3 className="h3__article--primary">{heading}</h3>
+        </>
+    );
+};
+
+const H3ArticleSecondary = (props) => {
+    const {heading} = props;
+
+    return (
+        <>
+            <h3 className="h3__article--secondary">{heading}</h3>
+        </>
+    );
+};
+
+const H4ArticleContent = (props) => {
+    const {content} = props;
+
+    return (
+        <>
+            <h4 className="h4__article--content">{content}</h4>
+        </>
+    );
+};
+
 const PTopicSideBar = (props) => {
-    const { content } = props;
+    const {content} = props;
 
     return (
         <>
@@ -29,4 +68,24 @@ const PTopicSideBar = (props) => {
     );
 };
 
-export { H2TopicNav, H2TopicSideBar, PTopicSideBar };
+const PMinRead = (props) => {
+    const {minRead} = props;
+
+    return (
+        <>
+            <p className="p__date-and-min-read">{minRead} min read</p>
+        </>
+    );
+};
+
+const PDateAndMinRead = (props) => {
+    const {date, minRead} = props;
+
+    return (
+        <>
+            <p className="p__date-and-min-read">{date} • {minRead} min read</p>
+        </>
+    );
+};
+
+export {H1Article, H2Topic, H2TopicSideBar, H3ArticlePrimary, H3ArticleSecondary, H4ArticleContent, PTopicSideBar, PMinRead, PDateAndMinRead};

@@ -1,0 +1,18 @@
+@use "../../../assets/styles/variables" as *;
+
+.image__article {
+    &--popular {
+        width: 55px;
+        height: 55px;
+    }
+
+    &--avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 1px solid $secondary-color-main;
+        padding: 3px;
+    }
+}
+
+

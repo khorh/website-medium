@@ -1,8 +1,8 @@
 import './App.scss';
 import Nav from "./components/Organisms/Nav/Nav"
-import ArticleFeatured from "./components/Organisms/ArticleFeatured/ArticleFeatured";
-import ArticlesLatest from "./components/Organisms/ArticlesLatest/ArticlesLatest";
-import SidebarTopic from "./components/Organisms/SidebarTopic/SidebarTopic";
+import ArticleFeatured from "./components/Molecules/ArticleFeatured/ArticleFeatured";
+import ArticlesLatest from "./components/Molecules/ArticlesLatest/ArticlesLatest";
+import Sidebar from "./components/Organisms/Sidebar/Sidebar";
 import articles from "./data/articles";
 
 const App = () => {
@@ -19,7 +19,7 @@ const App = () => {
                     <ArticlesLatest latestArr={latestArticles} />
                 </section>
                 <section className="section-right">
-                    <SidebarTopic />
+                    <Sidebar />
                 </section>
             </main>
         </div>

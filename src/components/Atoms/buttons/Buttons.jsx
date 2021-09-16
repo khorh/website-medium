@@ -1,8 +1,7 @@
-import React from "react";
 import "./_buttons.scss";
 
-const Buttons = (props) => {
-    const { label } = props;
+const ButtonPrimary = (props) => {
+    const {label} = props;
 
     return(
         <>
@@ -11,12 +10,14 @@ const Buttons = (props) => {
     );
 };
 
-const ButtonSecondary = () => {
+const ButtonSecondary = (props) => {
+    const {label} = props;
+
     return (
         <>
-            <button className="button__secondary"></button>
+            <button className="button__secondary">{label}</button>
         </>
     );
 };
 
-export default Buttons;
+export {ButtonPrimary, ButtonSecondary};

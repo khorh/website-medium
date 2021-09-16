@@ -1,6 +1,5 @@
-import React from "react";
-import mediumLogo from "../../../assets/images/medium-logo.png";
 import "./_logo.scss";
+import mediumLogo from "../../../assets/images/medium-logo.png";
 
 const Logo = () => {
     return (

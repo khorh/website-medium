@@ -1,0 +1,13 @@
+@use "../../../assets/styles/variables" as *;
+
+.sidebar {
+    &__topic {
+        & > .button__secondary {
+            margin-top: 20px;
+        }
+
+        & > .p__topic--sidebar:nth-child(4) {
+            margin-top: 23px;
+        }
+    }
+}

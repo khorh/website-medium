@@ -1,10 +1,9 @@
-import React from "react";
 import "./_dividers.scss";
 
 const VerticalDivider = () => {
   return (
-      <div className="divider-vertical"></div>
-  )
+      <div className="divider__vertical"></div>
+  );
 };
 
-export { VerticalDivider };
+export {VerticalDivider};

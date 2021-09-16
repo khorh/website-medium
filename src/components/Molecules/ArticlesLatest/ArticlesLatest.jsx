@@ -1,6 +1,5 @@
-import React from "react";
 import "./_articlesLatest.scss";
-import { H2TopicNav } from "../../Atoms/typo/Typo";
+import {H2Topic, H3ArticleSecondary, H4ArticleContent} from "../../Atoms/typo/Typo";
 
 const ArticlesLatest = (props) => {
     const { latestArr } = props;
@@ -9,8 +8,8 @@ const ArticlesLatest = (props) => {
         return (
             <div className="latest-article">
                 <div className="latest-article__left">
-                    <h3>{article.heading}</h3>
-                    <h4>{article.content}</h4>
+                    <H3ArticleSecondary heading={article.heading} />
+                    <H4ArticleContent content={article.content} />
                     <a>{article.author} in {article.publication}</a>
                     <p>{article.datePosted} • {article.minutesToRead} min read</p>
                 </div>
@@ -23,7 +22,7 @@ const ArticlesLatest = (props) => {
 
     return (
         <section>
-            <H2TopicNav heading="LATEST" />
+            <H2Topic heading="LATEST" />
             {latestContent}
         </section>
     );

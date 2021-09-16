@@ -1,9 +1,9 @@
 import React from "react";
 import "./_nav.scss";
 import Logo from "../../Atoms/logo/Logo";
+import { VerticalDivider } from "../../Atoms/dividers/Dividers";
 import { HyperlinkTopic, HyperlinkJoin, HyperlinkSignIn } from "../../Atoms/hyperlinks/Hyperlinks";
-import Buttons from "../../Atoms/buttons/Buttons";
-import {VerticalDivider} from "../../Atoms/dividers/Dividers";
+import { ButtonPrimary } from "../../Atoms/buttons/Buttons";
 
 const Nav = () => {
     return (
@@ -16,7 +16,7 @@ const Nav = () => {
             <div className="nav-right">
                 <HyperlinkJoin name="Become a member" link="https://medium.com/membership?source=upgrade_membership---nav_full----------------------------------" />
                 <HyperlinkSignIn name="Sign In" link="https://medium.com/m/signin" />
-                <Buttons label="Get started" />
+                <ButtonPrimary label="Get started" />
             </div>
         </nav>
     )

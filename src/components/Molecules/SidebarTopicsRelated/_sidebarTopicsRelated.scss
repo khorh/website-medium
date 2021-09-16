@@ -1,0 +1,24 @@
+@use "../../../assets/styles/variables" as *;
+
+.sidebar {
+    &__related-topics {
+        &-container {
+            & > .h2__topic {
+                margin-top: 48px;
+            }
+        }
+
+        &-list {
+            display: flex;
+            flex-direction: column;
+
+            & > .hyperlink__related-topics:nth-child(1) {
+                margin-top: 20px;
+            }
+
+            & > .hyperlink__related-topics:nth-child(n + 2) {
+                margin-top: 8px;
+            }
+        }
+    }
+}

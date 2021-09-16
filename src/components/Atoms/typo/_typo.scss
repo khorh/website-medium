@@ -1,33 +1,78 @@
 @use "../../../assets/styles/variables" as *;
 
-.h2__topic--nav, .h2__topic--side-bar {
-  margin: 0;
+.h1__article, .h2__topic--nav, .h2__topic--side-bar, .h3__article--primary, .h3__article--secondary, .p__topic--sidebar, .p__date-and-min-read {
+    margin: 0;
+}
+
+.h1 {
+    &__article {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 40px;
+        color: $primary-color-main;
+    }
 }
 
 .h2 {
-  &__topic--nav {
-    border-bottom: 1px solid $primary-color-shade-one;
-    padding-bottom: 8px;
-    font-size: 13px;
-    font-weight: 700;
-    line-height: 18px;
-    color: $primary-color-main;
-  }
+    &__topic {
+        border-bottom: 1px solid $primary-color-shade-one;
+        padding-bottom: 8px;
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 18px;
+        color: $primary-color-main;
+    }
 
-  &__topic--side-bar {
-    font-family: $tertiary-font-family;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 28px;
-    color: $primary-color-shade-three;
-  }
+    &__topic--side-bar {
+        font-family: $tertiary-font-family;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 28px;
+        color: $primary-color-shade-three;
+    }
+}
+
+.h3 {
+    &__article {
+        &--primary {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+            color: $primary-color-light;
+        }
+
+        &--secondary {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 20px;
+            color: $primary-color-main;
+        }
+    }
+}
+
+.h4 {
+    &__article {
+        &--content {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+            color: $primary-color-light;
+        }
+    }
 }
 
 .p {
-  &__topic--sidebar {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 20px;
-    color: $primary-color-light;
-  }
+    &__topic--sidebar {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        color: $primary-color-light;
+    }
+
+    &__date-and-min-read {
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 20px;
+        color: $primary-color-light;
+    }
 }
