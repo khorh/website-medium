@@ -40,14 +40,4 @@ const HyperlinkRelatedTopics = (props) => {
     );
 };
 
-const HyperlinkAuthorPublication = (props) => {
-    const {author, publication} = props;
-
-    return (
-        <>
-            <a className="hyperlink__author-publication">{author} in {publication}</a>
-        </>
-    );
-};
-
-export {HyperlinkTopic, HyperlinkJoin, HyperlinkSignIn, HyperlinkRelatedTopics, HyperlinkAuthorPublication};
+export {HyperlinkTopic, HyperlinkJoin, HyperlinkSignIn, HyperlinkRelatedTopics};

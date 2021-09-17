@@ -1,6 +1,6 @@
 @use "../../../assets/styles/variables" as *;
 
-.h1__article, .h2__topic--nav, .h2__topic--side-bar, .h3__article--primary, .h3__article--secondary, .p__topic--sidebar, .p__date-and-min-read {
+.h1__article, .h2__topic--nav, .h2__topic--side-bar, .h3__article--primary, .h3__article--secondary, .p__topic--sidebar, .p__author-publication, .p__date-and-min-read {
     margin: 0;
 }
 
@@ -67,6 +67,13 @@
         font-weight: 400;
         line-height: 20px;
         color: $primary-color-light;
+    }
+
+    &__author-publication {
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 20px;
+        color: $primary-color-main;
     }
 
     &__date-and-min-read {

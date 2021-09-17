@@ -1,6 +1,5 @@
 import "./_articlesLatest.scss";
-import {H2Topic, H3ArticleSecondary, H4ArticleContent, PDateAndMinRead} from "../../Atoms/typo/Typo";
-import {HyperlinkAuthorPublication} from "../../Atoms/hyperlinks/Hyperlinks";
+import {H2Topic, H3ArticleSecondary, H4ArticleContent, PAuthorPublication, PDateAndMinRead} from "../../Atoms/typo/Typo";
 import {ImageArticleLatest} from "../../Atoms/images/Images";
 import {IconBookmark} from "../../Atoms/icons/Icons";
 
@@ -20,7 +19,7 @@ const ArticlesLatest = (props) => {
                     <H4ArticleContent content={trimmedLatestContent} />
                     <div className="latest-article__left--info">
                         <div>
-                            <HyperlinkAuthorPublication author={article.author} publication={article.publication} />
+                            <PAuthorPublication author={article.author} publication={article.publication} />
                             <PDateAndMinRead date={monthDay} minRead={article.minutesToRead} />
                         </div>
                         <IconBookmark />

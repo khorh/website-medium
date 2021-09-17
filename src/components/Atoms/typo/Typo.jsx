@@ -68,6 +68,16 @@ const PTopicSideBar = (props) => {
     );
 };
 
+const PAuthorPublication = (props) => {
+    const {author, publication} = props;
+
+    return (
+        <>
+            <p className="p__author-publication">{author} in {publication}</p>
+        </>
+    );
+};
+
 const PMinRead = (props) => {
     const {minRead} = props;
 
@@ -88,4 +98,4 @@ const PDateAndMinRead = (props) => {
     );
 };
 
-export {H1Article, H2Topic, H2TopicSideBar, H3ArticlePrimary, H3ArticleSecondary, H4ArticleContent, PTopicSideBar, PMinRead, PDateAndMinRead};
+export {H1Article, H2Topic, H2TopicSideBar, H3ArticlePrimary, H3ArticleSecondary, H4ArticleContent, PTopicSideBar, PAuthorPublication, PMinRead, PDateAndMinRead};
