@@ -8,7 +8,7 @@ import articles from "./data/articles";
 const App = () => {
     const featuredArticle = articles.filter(article => article.featured);
 
-    const latestArticles = articles.filter(article => article.featured === false);
+    const latestArticles = articles.filter(article => article.featured === false).sort((a, b) => b.epochTimestamp - a.epochTimestamp);
 
     return (
         <div>

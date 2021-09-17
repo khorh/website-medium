@@ -8,6 +8,10 @@ const ArticleFeatured = (props) => {
     const {featuredArr} = props;
 
     const featuredContent = featuredArr.map(article => {
+        const date = new Date (article.epochTimestamp * 1000);
+
+        const monthDay = `${date.toLocaleString("default", {month: "short"})} ${date.getDate()}`;
+
         const membersArticle = article.membersOnlyContent ? <IconMembersOnlyContent /> : "";
 
         return (
@@ -22,7 +26,7 @@ const ArticleFeatured = (props) => {
                     <div className="featured-article__details--right">
                         <HyperlinkAuthorPublication author={article.author} publication={article.publication} />
                         <div className="featured-article__details--right--info">
-                            <PDateAndMinRead date={article.datePosted} minRead={article.minutesToRead} />
+                            <PDateAndMinRead date={monthDay} minRead={article.minutesToRead} />
                             {membersArticle}
                         </div>
                     </div>

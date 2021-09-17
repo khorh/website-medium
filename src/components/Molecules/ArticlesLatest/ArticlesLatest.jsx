@@ -8,6 +8,9 @@ const ArticlesLatest = (props) => {
     const { latestArr } = props;
 
     const latestContent = latestArr.map(article => {
+        const date = new Date (article.epochTimestamp * 1000);
+        const monthDay = `${date.toLocaleString("default", {month: "short"})} ${date.getDate()}`;
+
         const trimmedLatestContent = article.content.substring(0, 100) + "...";
 
         return (
@@ -18,7 +21,7 @@ const ArticlesLatest = (props) => {
                     <div className="latest-article__left--info">
                         <div>
                             <HyperlinkAuthorPublication author={article.author} publication={article.publication} />
-                            <PDateAndMinRead date={article.datePosted} minRead={article.minutesToRead} />
+                            <PDateAndMinRead date={monthDay} minRead={article.minutesToRead} />
                         </div>
                         <IconBookmark />
                     </div>

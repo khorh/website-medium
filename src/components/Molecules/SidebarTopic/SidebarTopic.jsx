@@ -8,7 +8,7 @@ const SidebarTopic = () => {
             <div className="sidebar__topic">
                 <H2TopicSideBar heading="Programming" />
                 <PTopicSideBar content="The good, the bad, the buggy." />
-                <ButtonSecondary label="Follow"/>
+                <ButtonSecondary label="Follow" />
                 <PTopicSideBar content="Follow to see more stories about Programming on your homepage and in your Medium Daily Digest" />
             </div>
         </>
