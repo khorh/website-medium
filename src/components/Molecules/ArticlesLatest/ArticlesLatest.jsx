@@ -7,10 +7,10 @@ const ArticlesLatest = (props) => {
     const { latestArr } = props;
 
     const latestContent = latestArr.map(article => {
+        const trimmedLatestContent = article.content.substring(0, 135) + "...";
+
         const date = new Date (article.epochTimestamp * 1000);
         const monthDay = `${date.toLocaleString("default", {month: "short"})} ${date.getDate()}`;
-
-        const trimmedLatestContent = article.content.substring(0, 100) + "...";
 
         return (
             <div className="latest-article">

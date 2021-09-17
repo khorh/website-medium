@@ -6,12 +6,10 @@ const SidebarArticlesPopular = (props) => {
     const {articlesArr} = props;
 
     const articlesList = articlesArr.map(article => {
-        const trimmedArticleHeading = article.heading.substring(0, 30) + "...";
-
         return (
             <div className="sidebar__articles-popular-list">
                 <div className="sidebar__articles-popular-list--summary">
-                    <H3ArticleSecondary heading={trimmedArticleHeading} />
+                    <H3ArticleSecondary heading={article.heading} />
                     <PMinRead minRead={article.minutesToRead} />
                 </div>
                 <div>
