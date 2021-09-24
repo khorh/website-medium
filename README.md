@@ -32,6 +32,6 @@ The image below is the original screen.
 
 #### 3.4 Javascript/React
 - Functionalities included:
-  - array filtering to get the featured article and array map for the output,
-  - array filtering to get the latest articles, sort by date (descending) and array map for the output, and
-  - array filtering and sort to get the first three popular articles i.e. the highest number of claps in descending order.
+  - _array filter_ to get the featured article and _array map_ for the output,
+  - _array filter_ to get the latest articles, _sort_ by date from latest to earliest and _array map_ for the output, and
+  - _array filter_ and _sort_ to get the first three popular articles i.e. the highest number of claps in descending order.
