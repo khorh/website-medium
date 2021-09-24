@@ -20,6 +20,7 @@ The image below is the original screen.
 - HTML/HTML5
 - CSS/SCSS
 - Javascript/React
+- NPM
 - IDE PHP Storm
 
 #### 3.2 HTML/HTML5
@@ -31,7 +32,7 @@ The image below is the original screen.
     - B.E.M methodology for naming classes.
 
 #### 3.4 Javascript/React
-- Functionalities included:
+- Functionalities include:
   - _array filter_ to get the featured article and _array map_ for the output,
   - _array filter_ to get the latest articles, _sort_ by date from latest to earliest and _array map_ for the output, and
   - _array filter_ and _sort_ to get the first three popular articles i.e. the highest number of claps in descending order.
