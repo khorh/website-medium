@@ -1,6 +1,7 @@
 {
   "homepage": "https://www.helenkhor.com/websites-medium",
   "name": "website-medium",
+  "description": "A React recreation of the medium website.",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
